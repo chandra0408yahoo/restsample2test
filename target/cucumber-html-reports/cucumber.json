@@ -1,0 +1,56 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-11-12T00:53:06.995Z",
+        "line": 4,
+        "name": "First test",
+        "description": "",
+        "id": "first--test-rest-with-cucumber;first-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6149053700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "retreive all data about students",
+            "match": {
+              "location": "StepsForFeatures.retreive_all_data_about_students()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-12T00:53:13.343Z",
+        "line": 8,
+        "name": "post data",
+        "description": "",
+        "id": "first--test-rest-with-cucumber;post-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [],
+        "tags": [
+          {
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "First  test Rest with cucumber",
+    "description": "",
+    "id": "first--test-rest-with-cucumber",
+    "keyword": "Feature",
+    "uri": "file:src/test/Resources/features/test.feature",
+    "tags": []
+  }
+]
