@@ -12,12 +12,14 @@ node() {
     stage('Checkout Self') {
         git branch: 'main', credentialsId: '', url: repoURL
     }
-    stage('Cucumber Tests') {
-            sh """
-         cd ${env.WORKSPACE_LOCAL}
-         mvn clean test
-      """
-        }
+   stage('Cucumber Tests'){
+
+   				sh """
+   					cd ${env.WORKSPACE_LOCAL}
+   					mvn clean test
+   				"""
+   			}
+   		}
     }
     stage('Expose report') {
         archive "**/cucumber.json"
