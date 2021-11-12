@@ -4,7 +4,7 @@ node() {
 
       stage("Prepare Workspace") {
         cleanWs()
-        env.WORKSPACE_LOCAL = 'C:\\Users\\Chandra\\Desktop\\restsampletest-master'
+        env.WORKSPACE_LOCAL = 'C:\Users\Chandra\Desktop\restsampletest-master'
        // env.BUILD_TIME = sh(returnStdout: true, script: 'date +%F-%T').trim()
         echo "Workspace set to:" + env.WORKSPACE_LOCAL
        // echo "Build time:" + env.BUILD_TIME
