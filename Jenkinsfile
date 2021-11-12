@@ -13,7 +13,6 @@ node() {
         git branch: 'main', credentialsId: '', url: repoURL
     }
     stage('Cucumber Tests') {
-         {
             sh """
          cd ${env.WORKSPACE_LOCAL}
          mvn clean test
