@@ -19,8 +19,8 @@ node() {
    					mvn clean test
    				"""
    			}
-   		}
-    }
+
+
     stage('Expose report') {
         archive "**/cucumber.json"
         cucumber '**/cucumber.json'
