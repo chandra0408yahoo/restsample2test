@@ -2,13 +2,13 @@ node() {
 
     def repoURL = 'https://github.com/chandra0408yahoo/restsample2test.git'
 
-   /*   stage("Prepare Workspace") {
+      stage("Prepare Workspace") {
         cleanWs()
-        env.WORKSPACE_LOCAL = sh(returnStdout: true, script: 'pwd').trim()
-        env.BUILD_TIME = sh(returnStdout: true, script: 'date +%F-%T').trim()
+        env.WORKSPACE_LOCAL = 'C:\\Users\\Chandra\\Desktop\\restsampletest-master'
+       // env.BUILD_TIME = sh(returnStdout: true, script: 'date +%F-%T').trim()
         echo "Workspace set to:" + env.WORKSPACE_LOCAL
-        echo "Build time:" + env.BUILD_TIME
-    } */
+       // echo "Build time:" + env.BUILD_TIME
+    }
     stage('Checkout Self') {
         git branch: 'main', credentialsId: '', url: repoURL
     }
